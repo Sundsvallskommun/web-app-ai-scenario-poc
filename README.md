@@ -1,6 +1,6 @@
-# Study buddy - POC
+# Scenarios - POC
 
-En testapp för att prova på konceptet med AI-assistent som läxhjälp.
+En testapp för att prova på konceptet med AI-assistent.
 
 ## Development
 
@@ -18,22 +18,8 @@ cp .env.example.env .env
 
 Appen pratar med [Intric](https://www.intric.ai/) via [AI Proxy api](https://github.com/Sundsvallskommun/web-app-intric-backend).
 
-Lägg in dina assistenter i din proxy och ange dom i din env:
-
-```
-VITE_ASSISTANT_EN=
-VITE_HASH_EN=
-VITE_APPLICATION_EN=
-VITE_ASSISTANT_DE=
-VITE_HASH_DE=
-VITE_APPLICATION_DE=
-VITE_ASSISTANT_ES=
-VITE_HASH_ES=
-VITE_APPLICATION_ES=
-VITE_ASSISTANT_FR=
-VITE_HASH_FR=
-VITE_APPLICATION_FR=
-```
+Lägg in dina assistent i din proxy och ange application+hash i din env, eller ange en api-nyckel i env.
+Du måste alltid ange assistentens id.
 
 Du behöver även ange urlen till din instans av AI proxy apit.
 
