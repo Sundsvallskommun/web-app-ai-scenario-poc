@@ -314,7 +314,12 @@ export const useChat = (options?: useChatOptions) => {
   };
 
   const sendQuery = (query: string, addToHistory: boolean = true) => {
-    if ((!assistantId || !hash) && !apikey) {
+    if (
+      !assistantId ||
+      (!apikey && !hash && !app) ||
+      (app && !hash) ||
+      (hash && !app)
+    ) {
       addHistoryEntry(
         "system",
         "Ett fel inträffade, assistenten gav inget svar.",
