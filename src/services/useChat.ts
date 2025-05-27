@@ -314,7 +314,6 @@ export const useChat = (options?: useChatOptions) => {
   };
 
   const sendQuery = (query: string, addToHistory: boolean = true) => {
-    console.log(assistantId, apikey, hash, app);
     if (
       !assistantId ||
       (!apikey && !hash && !app) ||
