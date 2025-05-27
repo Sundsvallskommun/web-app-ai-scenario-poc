@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
       VitePWA({
         manifest: {
           short_name: "Med livet som insats",
-          name: '"Med livet som insats" från Sundsvall Kommun',
+          name: "Med livet som insats",
           description:
             "Ett stöd för dialog med unga om vägval och dess konsekvenser",
           icons: [
