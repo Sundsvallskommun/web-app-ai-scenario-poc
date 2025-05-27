@@ -34,7 +34,11 @@ function App() {
     if (import.meta.env.VITE_INTRIC_API_KEY) {
       setApikey(import.meta.env.VITE_INTRIC_API_KEY);
     }
-    setSettings({ assistantId: import.meta.env.VITE_ASSISTANT });
+    setSettings({
+      assistantId: import.meta.env.VITE_ASSISTANT,
+      hash: import.meta.env.VITE_HASH,
+      app: import.meta.env.VITE_APPLICATION,
+    });
 
     setAssistantStoreName(`sk-assistant-${import.meta.env.VITE_ASSISTANT}`);
     setInfo({
